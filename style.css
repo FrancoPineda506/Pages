@@ -354,6 +354,9 @@ h6{
         opacity: 0;
         display: flex;
     }
+    header{
+        padding: 20px;
+    }
 }
 
 

@@ -1,13 +1,24 @@
-const hamburguesa = document.querySelector("#abrir");
-const nav = document.querySelector("#nav");
-const cerrar = document.querySelector("#cerrar")
+const menu = document.querySelector(".menu");
+const menuProy = document.querySelector(".menu-proy");
+const btnMenu = document.querySelector("#abrir");
+const btnProyectos = document.querySelector("#Proyectos");
+const btnCerrar = document.querySelector("#cerrar");
+const btnVolver = document.querySelector("#back");
 
-hamburguesa.addEventListener("click", () => {
-    nav.style.right = 0;
+btnMenu.addEventListener("click" , () => {
+    menu.classList.add("active");
 })
 
-cerrar.addEventListener("click", () => {
-    nav.style.right = "-400px" ;
+btnProyectos.addEventListener("click" , () => {
+    menuProy.classList.add("active");
 })
 
+btnCerrar.addEventListener("click" , () => {
+    menu.classList.remove("active");
+    menuProy.classList.remove("active");
+})
+
+btnVolver.addEventListener("click" , () => {
+    menuProy.classList.remove("active");
+})
 

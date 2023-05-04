@@ -69,74 +69,84 @@ header img{
     font-size: 30px;
 }
 
-.menu-nav{
-    display: flex;
-    top: 20px ;
-    right: 20px;
-    color: #fff;
-    font-size: 3em;
-    border: 2px solid ;
-    border-radius: 16px;
-    padding: 5px;
-    justify-items: center;
-    cursor: pointer;
-}
-
-header .nav-hamburguesa{
+.menu , .menu-proy{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    position: fixed;
-    top: 0;
-    right: -400px;
-    bottom: 0;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba( 0, 0, 0, .5);
-    padding: 2rem;
-    padding-top: 70px;
-    
-    transition: all .5s;
-    overflow: scroll;
+    align-items: end;
+    gap: 2em;
 
+
+
+    position: fixed;
+    top : 0;
+    right: -400px;
+    width: 200px;
+    height: 100%;
+
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 30px rgba( 0, 0, 0, .5);
+    padding: 100px 20px;
+    backdrop-filter: blur(20px);
+
+    font-size: 1.5em;
+
+    transition: all .5s;
+    z-index: 20;
 }
 
-.nav-hamburguesa::-webkit-scrollbar{
+.menu a , .menu-proy a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu-proy{
+    z-index: 10;
+    width: 300px;
+    padding: 20px;
+    align-items: start;
+    overflow-y: scroll;
+}
+
+.menu.active{
+    right: 0;
+}
+
+.menu-proy.active{
+    right: 200px;
+}
+
+.menu-proy::-webkit-scrollbar{
     width: 5px;
 }
 
-.nav-hamburguesa::-webkit-scrollbar-track{
+.menu-proy::-webkit-scrollbar-track{
     background: transparent;
 }
 
-.nav-hamburguesa::-webkit-scrollbar-thumb {
+.menu-proy::-webkit-scrollbar-thumb {
     background-color: aqua;
     border-radius: 20px;
 }
 
-.sub-ind{
-    margin-top: 5px;
-    margin-left: 40px;
-}
-
-.icon-close2{
+#cerrar , #back{
     display: flex;
-    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 2em;
-    border: solid 2px ;
-    border-radius: 15px;
+    border: 2px solid ;
+    border-radius: 50px ;
     transition: all .5s;
-    align-self: end;
-    margin-bottom: 20px;
-}
-
-.icon-close2:hover{
-    color: #162938;
-    background-color: #fff;
-}
-
-.nav-hamburguesa a{
-    color: #fff;
-    text-decoration: none;
 }
 
 
+
+#cerrar:hover , #back:hover{
+    background:  #fff;
+    color: red;
+}
+
+#back{
+    transform: rotate(180deg);
+}

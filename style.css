@@ -351,6 +351,7 @@ h6{
     }
 
     .cel{
+        opacity: 0;
         display: flex;
     }
 }

@@ -335,6 +335,10 @@ h6{
         width: 60vw;
         box-shadow: none;
     }
+
+    .redes a{
+        margin: 0 10px;
+    }
 }
 
 

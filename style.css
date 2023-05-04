@@ -84,6 +84,7 @@ header img{
 
     transition: all .5s;
     z-index: 20;
+    overflow: hidden;
 }
 
 .menu a , .menu-proy a{
@@ -327,12 +328,12 @@ h6{
     }
 
     .menu {
-        width: 40vw;
+        width: 50vw;
     
     }
 
     .menu-proy {
-        width: 60vw;
+        width: 50vw;
         box-shadow: none;
     }
 
@@ -341,7 +342,7 @@ h6{
     }
 
     .menu-proy.active{
-        right: 40vw;
+        right: 50vw;
     }
 }
 

@@ -339,6 +339,10 @@ h6{
     .redes a{
         margin: 0 10px;
     }
+
+    .menu-proy.active{
+        right: 4vw;
+    }
 }
 
 

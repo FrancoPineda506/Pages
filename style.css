@@ -189,23 +189,39 @@ body{
 
 }
 
-.row{
+.Datos{
+    margin-top: 5px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.info1, .info2{
-    font-size: 30px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    padding: 5px;
 }
 
-.info2{
-    align-items: start;
+.Dato{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+
+}
+
+.Dato div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+}
+
+.Dato div:first-child{
+    justify-content: end;
+}
+
+.estudios{
+    flex-direction: column;
+    align-items: start !important; 
 }
 
 .inv{

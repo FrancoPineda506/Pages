@@ -392,7 +392,7 @@ h6{
     }
 
     .cuadro{
-        width: 100%;
+        width: 100% !important;
         height: 100%;
         border: none;
         
@@ -432,6 +432,8 @@ h6{
     #inicio .cuadro{
         margin: 0;
     }
+
+
 }
 
 

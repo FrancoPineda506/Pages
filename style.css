@@ -219,9 +219,9 @@ body{
 }
 
 #inicio .cuadro{
-    margin-left: 40px;
-    justify-content: start;
-    align-items: start;
+    margin-left:40px ;
+    justify-content: center;
+    align-items: center;
     width: auto;
 }
 
@@ -427,6 +427,10 @@ h6{
     }
     header{
         padding: 20px;
+    }
+
+    #inicio .cuadro{
+        margin: 0;
     }
 }
 
